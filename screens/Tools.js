@@ -19,6 +19,7 @@ import {
 
 import CardStack, { Card } from 'react-native-card-stack-swiper';
 import { scale, verticalScale, } from 'react-native-size-matters';
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
 
 export default class ToolsScreen extends Component {
@@ -140,7 +141,7 @@ export default class ToolsScreen extends Component {
                 <Text style={styles.readText}>{this.state.reads0}</Text>
               </View>
               <View style={styles.photoFlame}>
-                <Image source={require("../assets/images/Tools/Isu.jpg")}/>
+                <Image style={styles.imgSize0}  resizeMode='contain' source={require("../assets/images/Tools/Isu.jpg")}/>
               </View>
               <View style={[styles.cardButtonBase]}>
                 <TouchableOpacity style={styles.cardButton} onPress={this.doAction0} >
@@ -159,7 +160,7 @@ export default class ToolsScreen extends Component {
                 <Text style={styles.readText}>{this.state.reads1}</Text>
               </View>
               <View style={styles.photoFlame}>
-                <Image source={require("../assets/images/Tools/Tokei.jpg")}/>
+                <Image style={styles.imgSize0}  resizeMode='contain' source={require("../assets/images/Tools/Tokei.jpg")}/>
               </View>
               <View style={[styles.cardButtonBase]}>
                 <TouchableOpacity style={styles.cardButton} onPress={this.doAction1} >
@@ -178,7 +179,7 @@ export default class ToolsScreen extends Component {
                 <Text style={styles.readText}>{this.state.reads2}</Text>
               </View>
               <View style={styles.photoFlame}>
-                <Image source={require("../assets/images/Tools/Hasi.jpg")}/>
+                <Image style={styles.imgSize2}  resizeMode='contain' source={require("../assets/images/Tools/Hasi.jpg")}/>
               </View>
               <View style={[styles.cardButtonBase]}>
                 <TouchableOpacity style={styles.cardButton} onPress={this.doAction2} >
@@ -197,7 +198,7 @@ export default class ToolsScreen extends Component {
                 <Text style={styles.readText}>{this.state.reads3}</Text>
               </View>
               <View style={styles.photoFlame}>
-                <Image source={require("../assets/images/Tools/Denwa.jpg")}/>
+                <Image style={styles.imgSize1}  resizeMode='contain' source={require("../assets/images/Tools/Denwa.jpg")}/>
               </View>
               <View style={[styles.cardButtonBase]}>
                 <TouchableOpacity style={styles.cardButton} onPress={this.doAction3} >
@@ -216,7 +217,7 @@ export default class ToolsScreen extends Component {
                 <Text style={styles.readText}>{this.state.reads4}</Text>
               </View>
               <View style={styles.photoFlame}>
-                <Image source={require("../assets/images/Tools/Cap.jpg")}/>
+                <Image style={styles.imgSize0}  resizeMode='contain' source={require("../assets/images/Tools/Cap.jpg")}/>
               </View>
               <View style={[styles.cardButtonBase]}>
                 <TouchableOpacity style={styles.cardButton} onPress={this.doAction4} >
@@ -235,7 +236,7 @@ export default class ToolsScreen extends Component {
                 <Text style={styles.readText}>{this.state.reads5}</Text>
               </View>
               <View style={styles.photoFlame}>
-                <Image source={require("../assets/images/Tools/Sara.jpg")}/>
+                <Image style={styles.imgSize1}  resizeMode='contain' source={require("../assets/images/Tools/Sara.jpg")}/>
               </View>
               <View style={[styles.cardButtonBase]}>
                 <TouchableOpacity style={styles.cardButton} onPress={this.doAction5} >
@@ -254,7 +255,7 @@ export default class ToolsScreen extends Component {
                 <Text style={styles.readText}>{this.state.reads6}</Text>
               </View>
               <View style={styles.photoFlame}>
-                <Image source={require("../assets/images/Tools/Haburasi.jpg")}/>
+                <Image style={styles.imgSize0}  resizeMode='contain' source={require("../assets/images/Tools/Haburasi.jpg")}/>
               </View>
               <View style={[styles.cardButtonBase]}>
                 <TouchableOpacity style={styles.cardButton} onPress={this.doAction6} >
@@ -273,7 +274,7 @@ export default class ToolsScreen extends Component {
                 <Text style={styles.readText}>{this.state.reads7}</Text>
               </View>
               <View style={styles.photoFlame}>
-                <Image source={require("../assets/images/Tools/Table.jpg")}/>
+                <Image style={styles.imgSize1}  resizeMode='contain' source={require("../assets/images/Tools/Table.jpg")}/>
               </View>
               <View style={[styles.cardButtonBase]}>
                 <TouchableOpacity style={styles.cardButton} onPress={this.doAction7} >
@@ -292,7 +293,7 @@ export default class ToolsScreen extends Component {
                 <Text style={styles.readText}>{this.state.reads8}</Text>
               </View>
               <View style={styles.photoFlame}>
-                <Image source={require("../assets/images/Tools/Hon.jpg")}/>
+                <Image style={styles.imgSize1}  resizeMode='contain' source={require("../assets/images/Tools/Hon.jpg")}/>
               </View>
               <View style={[styles.cardButtonBase]}>
                 <TouchableOpacity style={styles.cardButton} onPress={this.doAction8} >
@@ -311,7 +312,7 @@ export default class ToolsScreen extends Component {
                 <Text style={styles.readText}>{this.state.reads9}</Text>
               </View>
               <View style={styles.photoFlame}>
-                <Image source={require("../assets/images/Tools/thissyu.jpg")}/>
+                <Image style={styles.imgSize1}  resizeMode='contain' source={require("../assets/images/Tools/thissyu.jpg")}/>
               </View>
               <View style={[styles.cardButtonBase]}>
                 <TouchableOpacity style={styles.cardButton} onPress={this.doAction9} >
@@ -380,8 +381,8 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
   },
   cardBase: {
-      width: scale(320),
-      height: verticalScale(520),
+      width: wp('30%'),
+      height: hp('68%'),
       padding: scale(5),
       alignItems: 'center',
       justifyContent: 'center',
@@ -468,26 +469,27 @@ const styles = StyleSheet.create({
       justifyContent:'center',
       zIndex: 0,
   },
-  orange:{
-      width:55,
-      height:55,
+    orange:{
+      width: scale(20),
+      height: verticalScale(20),
       borderWidth:6,
-      borderColor:'lightskyblue',
+      borderColor:'royalblue',
       borderWidth:4,
       borderRadius: 30,
       marginTop: 0,
+      backgroundColor:'royalblue',
     },
     green:{
-      width:75,
-      height:75,
+      width: scale(40),
+      height: verticalScale(40),
       backgroundColor:'#fff',
       borderRadius:75,
       borderWidth:6,
       borderColor:'lightskyblue',
     },
     red:{
-      width:75,
-      height:75,
+      width: scale(40),
+      height: verticalScale(40),
       backgroundColor:'#fff',
       borderRadius:75,
       borderWidth:6,
@@ -500,5 +502,17 @@ const styles = StyleSheet.create({
     lastCard: {
       fontSize: scale(50),
       color: 'skyblue',
+    },
+    imgSize0: {
+      width: wp('10%'),
+    },
+    imgSize1: {
+      width: wp('20%'),
+    },
+    imgSize2: {
+    width: wp('15%'),
+    },
+    imgSize3: {
+      width: wp('12%'),
     }
 });
