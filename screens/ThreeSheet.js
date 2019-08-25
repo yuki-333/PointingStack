@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { scale, verticalScale, } from 'react-native-size-matters';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 import VegesScreen from './Veges'
 import ToolsScreen from './Tools'
@@ -8,7 +7,7 @@ import CarsScreen from './Cars'
 
 
 
-export default class FruitsScreen extends React.Component {
+export default class ThreeSheetScreen extends React.Component {
   render() {
     return (
     <View style={styles.container}>

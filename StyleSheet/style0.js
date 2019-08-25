@@ -29,18 +29,19 @@ import { scale, verticalScale, } from 'react-native-size-matters';
       flexDirection: 'row',
       flex: 1,
       margin: 7,
-      width: scale(270),
+      width: wp('28%'),
       backgroundColor: 'white',
       justifyContent: 'center',
       alignItems: 'center',
+      borderRadius: 10,
     },
     readText: {
-      fontSize: scale(30),
+      fontSize: scale(20),
     },
     photoFlame: {
       flex: 6,
       backgroundColor: 'white',
-      width: scale(280),
+      width: wp('28%'),
       justifyContent: 'center',
       alignItems: 'center',
       borderWidth: 5,
@@ -51,10 +52,11 @@ import { scale, verticalScale, } from 'react-native-size-matters';
     cardButtonBase: {
       flexDirection: 'row',
       flex: 1,
-      width: scale(280),
+      width: wp('30%'),
+      height: wp(5),
       alignItems: 'center',
       justifyContent: 'space-around',
-      marginTop: 10,
+      marginTop: scale(10),
       backgroundColor: 'skyblue'
     },
     cbbc0: {
@@ -64,8 +66,8 @@ import { scale, verticalScale, } from 'react-native-size-matters';
       backgroundColor: 'skyblue',
     },
     cardButton: {
-      height: scale(35),
-      width: scale(90),
+      width: wp(10),
+      height: hp(8),
       alignItems: 'center',
       justifyContent: 'center',
       backgroundColor: 'skyblue',
@@ -76,7 +78,7 @@ import { scale, verticalScale, } from 'react-native-size-matters';
       
     },
     cardText: {
-      fontSize: scale(20),
+      fontSize: scale(15),
       color: 'white',
     },
 
@@ -87,54 +89,35 @@ import { scale, verticalScale, } from 'react-native-size-matters';
        backgroundColor: null,
   },
   buttonContainer: {
-      width: 220,
       flexDirection: 'row',
       justifyContent: 'center',
   },
-  button: {
-      shadowColor: 'rgba(0,0,0,0.20)',
-      shadowOffset: {
-        width: 0,
-        height: 1
-      },
-      shadowOpacity:0.5,
-      backgroundColor: 'skyblue',
-      alignItems:'center',
-      justifyContent:'center',
-      zIndex: 0,
-  },
     orange:{
-      width: scale(20),
-      height: verticalScale(20),
-      borderWidth:6,
-      borderColor:'lightskyblue',
-      borderWidth:4,
+      width: 40,
+      height: 40,
       borderRadius: 30,
-      marginTop: 0,
-      backgroundColor:'royalblue',
+      marginRight: 10,
+      marginLeft: 10,
+      backgroundColor:'lightskyblue',
     },
     green:{
-      width: scale(40),
-      height: verticalScale(40),
+      width: 40,
+      height: 40,
       backgroundColor:'#fff',
       borderRadius:75,
-      borderWidth:6,
+      borderWidth:4,
       borderColor:'lightskyblue',
     },
     red:{
-      width: scale(40),
-      height: verticalScale(40),
+      width: 40,
+      height: 40,
       backgroundColor:'#fff',
       borderRadius:75,
-      borderWidth:6,
+      borderWidth:4,
       borderColor:'lightskyblue',
     },
-    footerText: {
-      fontSize: scale(14),
-      color: 'black',
-    },
     lastCard: {
-      fontSize: scale(50),
+      fontSize: scale(25),
       color: 'skyblue',
     },
     imgSize0: {

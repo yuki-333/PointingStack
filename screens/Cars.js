@@ -19,8 +19,6 @@ import {
 
 import styles from '../StyleSheet/style0'
 import CardStack, { Card } from 'react-native-card-stack-swiper';
-import { scale, verticalScale, } from 'react-native-size-matters';
-import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
 
 export default class CarsScreen extends Component {
@@ -137,6 +135,7 @@ export default class CarsScreen extends Component {
         >
 
           <Card style={[styles.card, styles.card1]}>
+          <TouchableOpacity activeOpacity={0.8}>
             <View style={[styles.cardBase, styles.cbbc0]}>
               <View style={styles.read}>
                 <Text style={styles.readText}>{this.state.reads0}</Text>
@@ -153,9 +152,11 @@ export default class CarsScreen extends Component {
                 </TouchableOpacity>
               </View>
             </View>
+          </TouchableOpacity>
           </Card>
 
           <Card style={[styles.card, styles.card1]}>
+          <TouchableOpacity activeOpacity={0.8}>
             <View style={[styles.cardBase, styles.cbbc0]}>
               <View style={styles.read}>
                 <Text style={styles.readText}>{this.state.reads1}</Text>
@@ -172,9 +173,11 @@ export default class CarsScreen extends Component {
                 </TouchableOpacity>
               </View>
             </View>
+            </TouchableOpacity>
           </Card>
 
           <Card style={[styles.card, styles.card1]}>
+          <TouchableOpacity activeOpacity={0.8}>
             <View style={[styles.cardBase, styles.cbbc0]}>
               <View style={styles.read}>
                 <Text style={styles.readText}>{this.state.reads2}</Text>
@@ -191,9 +194,11 @@ export default class CarsScreen extends Component {
                 </TouchableOpacity>
               </View>
             </View>
+          </TouchableOpacity>
           </Card>
 
           <Card style={[styles.card, styles.card1]}>
+          <TouchableOpacity activeOpacity={0.8}>
             <View style={[styles.cardBase, styles.cbbc0]}>
               <View style={styles.read}>
                 <Text style={styles.readText}>{this.state.reads3}</Text>
@@ -210,9 +215,11 @@ export default class CarsScreen extends Component {
                 </TouchableOpacity>
               </View>
             </View>
+          </TouchableOpacity>
           </Card>
 
           <Card style={[styles.card, styles.card1]}>
+          <TouchableOpacity activeOpacity={0.8}>
             <View style={[styles.cardBase, styles.cbbc0]}>
               <View style={styles.read}>
                 <Text style={styles.readText}>{this.state.reads4}</Text>
@@ -229,9 +236,11 @@ export default class CarsScreen extends Component {
                 </TouchableOpacity>
               </View>
             </View>
+            </TouchableOpacity>
           </Card>
 
           <Card style={[styles.card, styles.card1]}>
+          <TouchableOpacity activeOpacity={0.8}>
             <View style={[styles.cardBase, styles.cbbc0]}>
               <View style={styles.read}>
                 <Text style={styles.readText}>{this.state.reads5}</Text>
@@ -248,9 +257,11 @@ export default class CarsScreen extends Component {
                 </TouchableOpacity>
               </View>
             </View>
+          </TouchableOpacity>
           </Card>
 
           <Card style={[styles.card, styles.card1]}>
+          <TouchableOpacity activeOpacity={0.8}>
             <View style={[styles.cardBase, styles.cbbc0]}>
               <View style={styles.read}>
                 <Text style={styles.readText}>{this.state.reads6}</Text>
@@ -267,9 +278,11 @@ export default class CarsScreen extends Component {
                 </TouchableOpacity>
               </View>
             </View>
+          </TouchableOpacity>
           </Card>
 
           <Card style={[styles.card, styles.card1]}>
+          <TouchableOpacity activeOpacity={0.8}>
             <View style={[styles.cardBase, styles.cbbc0]}>
               <View style={styles.read}>
                 <Text style={styles.readText}>{this.state.reads7}</Text>
@@ -286,9 +299,11 @@ export default class CarsScreen extends Component {
                 </TouchableOpacity>
               </View>
             </View>
+          </TouchableOpacity>
           </Card>
 
           <Card style={[styles.card, styles.card1]}>
+          <TouchableOpacity activeOpacity={0.8}>
             <View style={[styles.cardBase, styles.cbbc0]}>
               <View style={styles.read}>
                 <Text style={styles.readText}>{this.state.reads8}</Text>
@@ -305,9 +320,11 @@ export default class CarsScreen extends Component {
                 </TouchableOpacity>
               </View>
             </View>
+          </TouchableOpacity>
           </Card>
 
           <Card style={[styles.card, styles.card1]}>
+          <TouchableOpacity activeOpacity={0.8}>
             <View style={[styles.cardBase, styles.cbbc0]}>
               <View style={styles.read}>
                 <Text style={styles.readText}>{this.state.reads9}</Text>
@@ -324,18 +341,20 @@ export default class CarsScreen extends Component {
                 </TouchableOpacity>
               </View>
             </View>
+          </TouchableOpacity>
           </Card>
 
 
           <Card style={[styles.card, styles.card1]}>
+          <TouchableOpacity activeOpacity={0.8}>
             <View style={[styles.cardBase, styles.cbbc0]}>
               <View style={styles.photoFlame}>
                 <Text style={styles.lastCard}>絵CARD</Text>
               </View>
               <View style={[styles.cardButtonBase]}>
-                <Text>2019</Text>
               </View>
             </View>
+          </TouchableOpacity>
           </Card>
          
           

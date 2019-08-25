@@ -15,7 +15,7 @@ import {
   scale,
  } from 'react-native-size-matters';
 
-import FruitsScreen from './Fruits';
+import ThreeSheetScreen from './ThreeSheet';
 import VegesScreen from './Veges'
 import SetumeiScreen from './Setsumei'
 import ToolsScreen from './Tools';
@@ -48,7 +48,7 @@ class HomeScreen extends Component {
         <View style={styles.allButtonContainer}>
 
           <TouchableOpacity style={styles.button} onPress={this.doPageAction0}>
-            <Text style={styles.buttonText} >果物</Text>
+            <Text style={styles.buttonText} >3枚</Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.button} onPress={this.doPageAction1}>
@@ -76,7 +76,7 @@ class HomeScreen extends Component {
     );
   }
   doPageAction0 = () => {
-    this.props.navigation.navigate('Fruits')
+    this.props.navigation.navigate('ThreeSheet')
   }
   doPageAction1 = () => {
     this.props.navigation.navigate('Veges')
@@ -95,7 +95,7 @@ class HomeScreen extends Component {
 export default createStackNavigator(
   {
     Home: { screen: HomeScreen },
-    Fruits: { screen: FruitsScreen },
+    ThreeSheet: { screen: ThreeSheetScreen },
     Veges: { screen: VegesScreen },
     Setumei: { screen: SetumeiScreen },
     Tools: { screen: ToolsScreen},
@@ -146,11 +146,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: 'skyblue',
     borderColor: 'lightskyblue',
-    borderWidth: 5,
+    borderWidth: 3,
     borderRadius: 30,
   },
   buttonText: {
-    fontSize: scale(27),
+    fontSize: scale(20),
     color: 'white',
   },
   footer: {
