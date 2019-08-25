@@ -288,7 +288,7 @@ export default class CarsScreen extends Component {
                 <Text style={styles.readText}>{this.state.reads7}</Text>
               </View>
               <View style={styles.photoFlame}>
-                <Image style={styles.imgSize0}  resizeMode='contain' source={require("../assets/images/Cars/Kyukyusya.jpg")}/>
+                <Image style={styles.imgSize1}  resizeMode='contain' source={require("../assets/images/Cars/Kyukyusya.jpg")}/>
               </View>
               <View style={[styles.cardButtonBase]}>
                 <TouchableOpacity style={styles.cardButton} onPress={this.doAction7} >
