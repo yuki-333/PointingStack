@@ -36,7 +36,7 @@ import { scale, verticalScale, } from 'react-native-size-matters';
       borderRadius: 10,
     },
     readText: {
-      fontSize: scale(20),
+      fontSize: scale(17),
     },
     photoFlame: {
       flex: 6,

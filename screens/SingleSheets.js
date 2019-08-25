@@ -5,17 +5,13 @@ import VegesScreen from './Veges'
 import ToolsScreen from './Tools'
 import CarsScreen from './Cars'
 import FruitsScreen from './Fruits'
-import SelectScreen from './SelectScreen'
 
 
 
-export default class TwoSheetsScreen extends React.Component {
+export default class SingleSheetsScreen extends React.Component {
   render() {
     return (
     <View style={styles.container}>
-      <View style={styles.Card1}>
-        <VegesScreen />
-      </View>
       <View style={styles.Card2}>
         <FruitsScreen />
       </View>

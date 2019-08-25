@@ -17,7 +17,7 @@ import {
 
 import ThreeSheetsScreen from './ThreeSheets';
 import TwoSheetsScreen from './TwoSheets'
-import SetumeiScreen from './Setsumei'
+import SingleSheetsScreen from './SingleSheets'
 import ToolsScreen from './Tools';
 import CarsScreen from './Cars'
 
@@ -47,6 +47,10 @@ class HomeScreen extends Component {
      
         <View style={styles.allButtonContainer}>
 
+          <TouchableOpacity style={styles.button} onPress={this.doPageAction4}>
+            <Text style={styles.buttonText} >1枚</Text>
+          </TouchableOpacity>
+
           <TouchableOpacity style={styles.button} onPress={this.doPageAction1}>
             <Text style={styles.buttonText} >2枚</Text>
           </TouchableOpacity>
@@ -55,12 +59,8 @@ class HomeScreen extends Component {
             <Text style={styles.buttonText} >3枚</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.button} onPress={this.doPageAction4}>
-          <Text style={styles.buttonText} >乗り物</Text>
-          </TouchableOpacity>
-
           <TouchableOpacity style={styles.button} onPress={this.doPageAction3}>
-          <Text style={styles.buttonText} >日用品</Text>
+          <Text style={styles.buttonText} >4枚</Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.button} onPress={this.doPageAction2}>
@@ -82,7 +82,7 @@ class HomeScreen extends Component {
     this.props.navigation.navigate('TwoSheets')
   }
   doPageAction2 = () => {
-    this.props.navigation.navigate('Setumei')
+    this.props.navigation.navigate('SingleSheets')
   }
   doPageAction3 = () => {
     this.props.navigation.navigate('Tools')
@@ -97,7 +97,7 @@ export default createStackNavigator(
     Home: { screen: HomeScreen },
     TwoSheets: { screen: TwoSheetsScreen },
     ThreeSheets: { screen: ThreeSheetsScreen },
-    Setumei: { screen: SetumeiScreen },
+    SingleSheets: { screen: SingleSheetsScreen },
     Tools: { screen: ToolsScreen},
     Cars: {screen: CarsScreen},
   },
