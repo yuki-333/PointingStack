@@ -7,7 +7,7 @@ import CarsScreen from './Cars'
 
 
 
-export default class ThreeSheetScreen extends React.Component {
+export default class TwoSheetsScreen extends React.Component {
   render() {
     return (
     <View style={styles.container}>
@@ -16,9 +16,6 @@ export default class ThreeSheetScreen extends React.Component {
       </View>
       <View style={styles.Card2}>
         <CarsScreen />
-      </View>
-      <View style={styles.Card3}>
-        <ToolsScreen />
       </View>
     </View>
     );

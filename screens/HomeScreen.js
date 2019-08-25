@@ -15,8 +15,8 @@ import {
   scale,
  } from 'react-native-size-matters';
 
-import ThreeSheetScreen from './ThreeSheet';
-import VegesScreen from './Veges'
+import ThreeSheetsScreen from './ThreeSheets';
+import TwoSheetsScreen from './TwoSheets'
 import SetumeiScreen from './Setsumei'
 import ToolsScreen from './Tools';
 import CarsScreen from './Cars'
@@ -47,12 +47,12 @@ class HomeScreen extends Component {
      
         <View style={styles.allButtonContainer}>
 
-          <TouchableOpacity style={styles.button} onPress={this.doPageAction0}>
-            <Text style={styles.buttonText} >3枚</Text>
+          <TouchableOpacity style={styles.button} onPress={this.doPageAction1}>
+            <Text style={styles.buttonText} >2枚</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.button} onPress={this.doPageAction1}>
-          <Text style={styles.buttonText} >野菜</Text>
+          <TouchableOpacity style={styles.button} onPress={this.doPageAction0}>
+            <Text style={styles.buttonText} >3枚</Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.button} onPress={this.doPageAction4}>
@@ -76,10 +76,10 @@ class HomeScreen extends Component {
     );
   }
   doPageAction0 = () => {
-    this.props.navigation.navigate('ThreeSheet')
+    this.props.navigation.navigate('ThreeSheets')
   }
   doPageAction1 = () => {
-    this.props.navigation.navigate('Veges')
+    this.props.navigation.navigate('TwoSheets')
   }
   doPageAction2 = () => {
     this.props.navigation.navigate('Setumei')
@@ -95,8 +95,8 @@ class HomeScreen extends Component {
 export default createStackNavigator(
   {
     Home: { screen: HomeScreen },
-    ThreeSheet: { screen: ThreeSheetScreen },
-    Veges: { screen: VegesScreen },
+    TwoSheets: { screen: TwoSheetsScreen },
+    ThreeSheets: { screen: ThreeSheetsScreen },
     Setumei: { screen: SetumeiScreen },
     Tools: { screen: ToolsScreen},
     Cars: {screen: CarsScreen},
